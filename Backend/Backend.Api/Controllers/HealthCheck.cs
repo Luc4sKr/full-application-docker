@@ -15,7 +15,7 @@ namespace Backend.Api.Controllers
         [HttpGet("message")]
         public ActionResult<string> Message()
         {
-            return Ok("Menssagem do Backend");
+            return Ok("Backend operante");
         }
     }
 }
