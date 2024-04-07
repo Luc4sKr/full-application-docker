@@ -1,6 +1,10 @@
 import axios from 'axios';
 
+/* eslint-disable no-undef */
+const apiUrl = process.env.URL_BACKEND;
+/* eslint-enable no-undef */
+
 export const instance = axios.create({
-    baseURL: "https://127.0.0.1:7283/api",
+    baseURL: `${apiUrl}/api`,
     timeout: 5000
 });
